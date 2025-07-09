@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #9333ea;
+  --secondary-color: #64748b;
+  --light-bg: #ffffff;
+  --dark-bg: #1f2937;
+  --light-text: #111827;
+  --dark-text: #f9fafb;
+  --card-bg-light: #f3f4f6;
+  --card-bg-dark: #374151;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+.app-container.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.container.calculator {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background-color: inherit;
+  transition: background-color 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mode-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.main-layout {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.controls {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-title {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin: 1rem 0 0.5rem;
+}
+
+.currency-input,
+.slider {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.slider {
+  appearance: none;
+  height: 6px;
+  background: var(--primary-color);
+  outline: none;
+  border-radius: 3px;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pdf-button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pdf-button:hover {
+  opacity: 0.95;
+}
+
+.results {
+  flex: 2;
+  min-width: 400px;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  background-color: var(--card-bg-light);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.app-container.dark .card {
+  background-color: var(--card-bg-dark);
+}
+
+.canvas-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--card-bg-light);
+  transition: background-color 0.3s;
+}
+
+.app-container.dark .canvas-container {
+  background-color: var(--card-bg-dark);
+}
