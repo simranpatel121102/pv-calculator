@@ -123,8 +123,9 @@ const FVCalculator = () => {
     <div className={`app-container ${darkMode ? "dark" : ""}`}>
       <div className="container calculator">
         <div className="header">
-          <h1>FV Calculator</h1>
-          <p>Based on One-time Present Value</p>
+          <h1>PV Calculator</h1>
+          <p>Calculate Present Value from Future Value</p>
+
           <button className="mode-toggle" onClick={() => setDarkMode((prev) => !prev)}>
             {darkMode ? "🌞" : "🌙"}
           </button>
